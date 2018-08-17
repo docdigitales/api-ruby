@@ -4,7 +4,7 @@ module Docdigitales
     
     def generacion_factura(data)
       begin
-        uri = "http://staging.api.docdigitales.com/v1/facturas/generar";
+        uri = "https://api.docdigitales.com/v1/facturas/generar";
         return get_post_response(uri, data)
       rescue => exception
         puts exception
@@ -14,7 +14,7 @@ module Docdigitales
 
     def generacion_recepcion_pago(data)
       begin
-        uri = "http://staging.api.docdigitales.com/v1/recepciones_pago/generar";
+        uri = "https://api.docdigitales.com/v1/recepciones_pago/generar";
         return get_post_response(uri, data)
       rescue => exception
         puts exception
@@ -24,7 +24,7 @@ module Docdigitales
 
     def cancelacion_factura(data)
       begin
-        uri = "http://staging.api.docdigitales.com/v1/facturas/cancelar";
+        uri = "https://api.docdigitales.com/v1/facturas/cancelar";
         return get_post_response(uri, data)
       rescue => exception
         puts exception
@@ -34,7 +34,7 @@ module Docdigitales
 
     def envio_factura(data)
       begin
-        uri = "http://staging.api.docdigitales.com/v1/facturas/enviar";
+        uri = "https://api.docdigitales.com/v1/facturas/enviar";
         return get_post_response(uri, data)
       rescue => exception
         puts exception
@@ -44,7 +44,7 @@ module Docdigitales
 
     def descargar_factura(data)
       begin
-        uri = "http://staging.api.docdigitales.com/v1/facturas/descargar";
+        uri = "https://api.docdigitales.com/v1/facturas/descargar";
         return get_post_response(uri, data)
       rescue => exception
         puts exception
