@@ -1,6 +1,6 @@
 module Docdigitales
   class Factura
-    API_KEY = "6DBXudR_TgjhBaAB5RcORA"
+    API_KEY = "123123123"
     
     def generacion_factura(data)
       begin
